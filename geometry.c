@@ -15,19 +15,19 @@ int main()
     if ((ab == cd) && (bc == da))
     {
         if ((ab != bc) && (bc != cd) && (((xa - xb) * (xc - xb) + (ya - yb) * (yc - yb)) == 0))
-            printf("Rectangle");
+            printf("This is a Rectangle!");
         else if ((ab == bc) && (bc == cd))
         {
             if ((ac != bd))
-                printf("Diamond");
+                printf("This is a Diamond!");
             else
-                printf("Square");
+                printf("This is a Square!");
         }
         else
-            printf("Parallelogram");
+            printf("This is a Parallelogram!");
     }
     else if (((ab == bc) && (cd == da)) || ((ab == da) && (bc == cd)))
-        printf("Kite");
+        printf("This is a Kite!");
     else
         printf("None");
     return 0;
